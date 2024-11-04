@@ -10,18 +10,31 @@
       <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <ion-item lines="full">
-    <ion-label position="floating">Username</ion-label>
-    <ion-input type="text" [(ngModel)]="username" required="required"></ion-input>
-  </ion-item>
-  <ion-item lines="full">
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" [(ngModel)]="password" required="required"></ion-input>
-  </ion-item>
-  <ion-row>
-    <ion-col>
-      <ion-button type="submit" color="primary" expand="block" (click)="login()">Login</ion-button>
-    </ion-col>
-  </ion-row>
+  <div class="card-container">
+    <ion-card>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-md="3" size="12" class="ion-padding ion-blue-bkg">
+          <img
+            src="../../assets/icon/ionic-framework-og.png"
+            alt="Ionic logo"
+            loading="lazy"
+          />
+        </ion-col>
+      </ion-row>
+      <ion-item lines="full">
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username" required="required"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" required="required"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" expand="block" (click)="login()">Login</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+  
 </ion-content>

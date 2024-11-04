@@ -18,4 +18,5 @@ export class HomePage {
     this.authService.logout();
     this.router.navigateByUrl('/login');
   }
+  alertButtons = ['Ok'];
 }

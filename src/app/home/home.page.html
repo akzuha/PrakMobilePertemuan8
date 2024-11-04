@@ -12,11 +12,24 @@
       <ion-title size="large">Home App</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  
   <ion-item (click)="logout()">
     <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
     <ion-label>Logout</ion-label>
   </ion-item>
   <hr>
-  Selamat datang {{ nama }}
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      Selamat datang {{ nama }}
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-button id="present-alert">Click Me</ion-button>
+    </ion-row>
+  </ion-grid>
+  <ion-alert 
+    trigger="present-alert" 
+    header="Coba Login" 
+    message="Halaman HomePage dari projek ionic untuk mencoba fitur login." 
+    [buttons]="alertButtons">
+  </ion-alert> 
 </ion-content>
